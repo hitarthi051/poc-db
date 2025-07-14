@@ -13,7 +13,8 @@ column_name = "task_deadline"
 column_type = "VARCHAR(255)"  # Adjust as needed
 
 # SQL query to add a column
-add_column_query = f'ALTER TABLE "{table_name}" ADD COLUMN "{column_name}" {column_type};'
+add_column_query = f'ALTER TABLE {table_name} ADD COLUMN {column_name} {column_type};'
+
 
 connection = None  # Initialize connection variable
 
